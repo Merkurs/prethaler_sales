@@ -4,11 +4,13 @@ public class Customer
 {
 	private int customerID;
 	private String firstNameString;
+	private double credit;
 	
-	public Customer(int customerID, String firstNameString)
+	public Customer(int customerID, String firstNameString, double credit)
 	{
 		this.customerID = customerID;
 		this.firstNameString = firstNameString;
+		this.credit = credit;
 	}
 	
 	public int getCustomerID()
@@ -29,5 +31,15 @@ public class Customer
 	public void setFirstNameString(String firstNameString)
 	{
 		this.firstNameString = firstNameString;
+	}
+
+	public double getCredit()
+	{
+		return credit;
+	}
+
+	public void setCredit(double credit)
+	{
+		this.credit = credit;
 	}
 }
